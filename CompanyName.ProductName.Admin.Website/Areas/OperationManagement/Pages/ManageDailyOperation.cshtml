@@ -1,0 +1,126 @@
+@page
+@model ManageDailyOperationModel
+@{
+    ViewData["Title"] = "Manage Daily Operation";
+}
+
+<div class="d-flex align-items-center">
+    <div class="mr-auto">
+        <h3 class="m-subheader__title m-subheader__title--separator"><i class="fa fa-dolly m--icon-font-size-lg3 mr-1"></i> Manage Daily Operation</h3>
+    </div>
+    <div>
+        <a asp-area="OperationManagement" class="btn btn-default m-menu__link" asp-page="Index">
+            <i class="fa fa-arrow-left"></i>&nbsp; Back to Operation Management
+        </a>
+    </div>
+</div>
+
+<div class="clear clearfix"><br /></div>
+
+<div class="m-portlet m-portlet--primary m-portlet--head-solid-bg">
+
+
+    <div class="m-portlet__body">
+
+        <h5>Machine Name: <span class="font-weight-bold">Dump Truck</span></h5><br />
+        <h5>Machine NO: <span class="font-weight-bold">101050</span></h5><br />
+
+        <div class="clear clearfix"><hr /></div>
+        <div class="row no-gutters">
+            <div class="col-sm">
+                <button class="btn btn-primary w-100">17th, October 2018</button>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-default w-100" disabled>18th, October 2018</button>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-default w-100" disabled>19th, October 2018</button>
+            </div>
+        </div>
+        <div class="clear clearfix"><hr /><br /></div>
+
+        <div class="row">
+            <div class="col-md-7">
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="startTimerInput">Start Timer</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control m-input" id="startTimerInput" disabled placeholder="25,125">
+                    </div>
+                </div>
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="currentTimerInput">Current Timer</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control m-input" id="startTimerInput" value="225" placeholder="">
+                    </div>
+                </div>
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="currentTimerInput">Difference</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control m-input" disabled id="startTimerInput" placeholder="-">
+                    </div>
+                </div>
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="maintenanceInput">Summery</label></h5>
+                    </div>
+                    <div class="col-sm-8 mt-2">
+                        <div class="row d-flex align-items-center mb-3">
+                            <div class="col-4">Paid</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control m-input" id="paidInput" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center mb-3">
+                            <div class="col-4">Maintenence</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control m-input" id="paidInput" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center mb-3">
+                            <div class="col-4">Transportation</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control m-input" id="paidInput" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary w-100">Save</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-5">
+                <div class="alert m-alert m-alert--default w-100 mt-3 mt-md-0" role="alert">
+
+                    <h5><i class="fa fa-info-circle mr-1 m--icon-font-size-lg1"></i> Kindly Note</h5><br />
+                    <span>
+                        You have to set value of this date to be able to move to the following dates
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

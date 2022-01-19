@@ -1,0 +1,63 @@
+.custom-pagination > ul{
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.custom-pagination > ul > li{
+    padding: 0;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.custom-pagination > ul > li.active span{
+    background: #716aca;
+    color: #fff;
+}
+
+.custom-pagination > ul > li a.page-link,
+.custom-pagination > ul > li > span{
+    cursor: pointer;
+    display: inline-block;
+    height: 2.25rem;
+    min-width: 2.25rem;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    border:0;
+}
+
+.custom-pagination > ul > li > .prev,
+.custom-pagination > ul > li > .next{
+    background: #ebe9f2;
+}
+
+.custom-pagination > ul > li.disabled > .prev,
+.custom-pagination > ul > li.disabled > .next
+{
+    color: #898b96;
+    background: #ebe9f2;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    cursor: not-allowed;
+}

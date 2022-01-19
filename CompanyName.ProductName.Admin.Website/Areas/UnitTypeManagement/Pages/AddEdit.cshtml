@@ -1,0 +1,120 @@
+@page
+@model AddEditModel
+@{
+    ViewData["Title"] = "Add Working Unit Type";
+}
+
+
+<div class="d-flex align-items-center">
+    <div class="mr-auto">
+        <h3 class="m-subheader__title m-subheader__title--separator"><i class="fa fa-plus m--icon-font-size-lg3 mr-1"></i> Add Working Unit Type</h3>
+    </div>
+    <div>
+        <a asp-area="UnitTypeManagement" class="btn btn-default m-menu__link" asp-page="Index">
+            <i class="fa fa-arrow-left"></i>&nbsp; Back to Unit Types Management
+        </a>
+    </div>
+</div>
+
+<div class="clear clearfix"><br /></div>
+
+<div class="m-portlet m-portlet--primary m-portlet--head-solid-bg">
+
+
+    <div class="m-portlet__body">
+        <div class="row">
+            <div class="col-md-7">
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="maintenanceInput">Name</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control m-input" id="maintenanceInput" placeholder="Maintenance hour">
+                        <span class="m-form__help">Helper text here</span>
+                    </div>
+                </div>
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="invoicedStatusInput">Invoiced</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="m-checkbox-inline mt-3">
+                            <label class="m-checkbox">
+                                <input type="radio" name="radiolist1" value="1" checked="checked"> Yes
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="radio" name="radiolist1" value="2"> No
+                                <span></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="needAuditInput">Need to be Audited</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="m-checkbox-inline mt-3">
+                            <label class="m-checkbox">
+                                <input type="radio" name="radiolist2" value="1" checked="checked"> Yes
+                                <span></span>
+                            </label>
+                            <label class="m-checkbox">
+                                <input type="radio" name="radiolist2" value="2"> No
+                                <span></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Start formgroup row-->
+                <div class="form-group m-form__group row">
+                    <div class="col-sm-4">
+                        <h5 class="mt-3"><label for="maintenanceInput">Select Auditor</label></h5>
+                    </div>
+                    <div class="col-sm-8">
+                        <select class="form-control m-input" id="filter3">
+                            <option selected>Select user from the list</option>
+                            <option>User 1</option>
+                            <option>User 2</option>
+                            <option>Etc..</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary w-100">Save</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-5">
+                <div class="alert m-alert m-alert--default w-100 mt-3 mt-md-0" role="alert">
+
+                    <h5><i class="fa fa-info-circle mr-1 m--icon-font-size-lg1"></i> Kindly Note</h5><br />
+                    <span>
+                        Working unit type notes here <br />
+                        Working unit types to be added here
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

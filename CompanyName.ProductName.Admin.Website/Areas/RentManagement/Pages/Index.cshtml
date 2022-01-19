@@ -1,0 +1,100 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Rent Management";
+}
+
+<div class="d-flex align-items-center">
+    <div class="mr-auto">
+        <h3 class="m-subheader__title m-subheader__title--separator"><i class="fa fa-clock m--icon-font-size-lg3 mr-1"></i> Rent Management</h3>
+    </div>
+</div>
+
+<div class="clear clearfix"><br /></div>
+
+<div class="m-portlet m-portlet--primary m-portlet--head-solid-bg">
+
+
+    <div class="m-portlet__body">
+        <!--Start Filter-->
+        <div class="row">
+            <div class="col-sm mb-2 mb-sm-0">
+                <input type="text" class="form-control m-input m-input--solid" id="filter1" aria-describedby="filter1" placeholder="Machine Name">
+            </div>
+
+            <div class="col-sm mb-2 mb-sm-0">
+                <input type="text" class="form-control m-input m-input--solid" id="filter2" aria-describedby="filter2" placeholder="Machine No">
+            </div>
+
+            <div class="col-sm mb-2 mb-sm-0">
+                <select class="form-control m-input m-input--solid" id="filter3">
+                    <option selected>Rented</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="col-sm mb-2 mb-sm-0">
+                <select class="form-control m-input m-input--solid" id="filter3">
+                    <option selected>Renter Name</option>
+                    <option>Ahmed</option>
+                    <option>Magdy Ahmed</option>
+                    <option>Mahmoud</option>
+                </select>
+            </div>
+
+            <div class="col-sm mb-2 mb-sm-0">
+                <button type="button" class="btn btn-secondary w-100"><i class="fa fa-filter"></i>&nbsp; Filter</button>
+            </div>
+        </div>
+        <!--End Filter-->
+        <div class="clear clearfix"><br /><hr /></div>
+        <!--Start Grid-->
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped- table-bordered table-hover table-checkable m--regular-font-size-sm1" id="m_table_1">
+                    <thead>
+                        <tr>
+                            <th>Machine Name</th>
+                            <th>Machine No.</thclass="all">
+                            <th>Starting Timer</th>
+                            <th>Currrent Timer</th>
+                            <th>Opening Timer</th>
+                            <th>Rent Rate</th>
+                            <th>Rented</th>
+                            <th>Renter Name</th>
+                            <th>Renter Date</th>
+                            <th>Related Group</th>
+                            <th class="all"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="all">Dump Truck</tdclass="all">
+
+                            <td>101015</td>
+                            <td>152.5</td>
+                            <td>160</td>
+                            <td>150</td>
+                            <td>$ 200</td>
+                            <td>Yes</td>
+                            <td>Magdy Ahmed</td>
+                            <td>25th, Sep</td>
+                            <td>Group-1</td>
+                            <td width="20%" class="text-center all p-0">
+                                <button type="button" class="btn btn-sm btn-danger">Garage</button>
+                                <a asp-area="RentManagement" asp-page="Manage" class="btn btn-sm btn-primary">Manage</a>
+                            </td>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--End Grid-->
+    </div>
+
+</div>

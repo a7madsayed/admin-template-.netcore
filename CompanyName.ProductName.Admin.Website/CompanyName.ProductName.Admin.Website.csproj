@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-Motosoft.ProductName.Admin.Website-F263565F-620E-43FE-BE41-DCCD6776AA9C</UserSecretsId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>../motosoft.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Extensions.QueryableExtensions" Version="1.0.25" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" PrivateAssets="All" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.1.2" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyName.ProductName.Admin.Core\CompanyName.ProductName.Admin.Core.csproj" />
+    <ProjectReference Include="..\CompanyName.ProductName.Admin.Extensions\CompanyName.ProductName.Admin.Extensions.csproj" />
+    <ProjectReference Include="..\CompanyName.ProductName.Identity\CompanyName.ProductName.Identity.Core\CompanyName.Identity.Core.csproj" />
+    <ProjectReference Include="..\CompanyName.ProductName.Identity\Motosoft.ProductName.Identity.Core\CompanyName.Identity.Core.csproj" />
+  </ItemGroup>
+
+</Project>
